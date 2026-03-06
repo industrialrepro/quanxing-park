@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>全興產業園區廠房廠地｜瑞禾不動產</title>
+  <meta name="description" content="全興產業園區廠房廠地買賣租賃專業媒合，瑞禾不動產深耕中臺灣工業地產，協助您在全興產業園區找到最適合的廠房或產業用地。" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif; background-color: #FFFFFF; color: #0D0D46; line-height: 1.7; }
+    :root { --primary: #1C5739; --accent1: #49882C; --accent2: #EAB500; --accent3: #AFC89D; --text-body: #0D0D46; --white: #FFFFFF; }
+    h1, h2, h3 { color: var(--primary); font-weight: 700; }
+    nav { position: sticky; top: 0; z-index: 100; background-color: var(--primary); padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
+    .nav-brand { color: var(--white); font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; text-decoration: none; display: flex; align-items: center; gap: 10px; }
+    .nav-brand span.tag { background: var(--accent2); color: var(--primary); font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 20px; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.88); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent2); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; }
+    .hero { background: linear-gradient(135deg, var(--primary) 0%, #2a7a52 60%, #3a9a68 100%); color: var(--white); padding: 80px 5% 72px; text-align: center; position: relative; overflow: hidden; }
+    .hero-eyebrow { display: inline-block; background: var(--accent2); color: var(--primary); font-size: 0.78rem; font-weight: 800; padding: 4px 16px; border-radius: 20px; letter-spacing: 0.08em; margin-bottom: 20px; }
+    .hero h1 { color: var(--white); font-size: clamp(1.8rem, 4.5vw, 3rem); line-height: 1.35; margin-bottom: 16px; }
+    .hero p { color: rgba(255,255,255,0.82); font-size: clamp(0.95rem, 2vw, 1.1rem); max-width: 600px; margin: 0 auto 36px; }
+    .hero-cta { display: inline-flex; align-items: center; gap: 8px; background: var(--accent2); color: var(--primary); font-size: 1rem; font-weight: 800; padding: 14px 32px; border-radius: 50px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(234,181,0,0.35); }
+    .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(234,181,0,0.45); }
+    .hero-stats { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-top: 52px; }
+    .hero-stat { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 18px 28px; text-align: center; min-width: 140px; }
+    .hero-stat .number { display: block; font-size: 1.8rem; font-weight: 800; color: var(--accent2); line-height: 1; }
+    .hero-stat .label { font-size: 0.78rem; color: rgba(255,255,255,0.8); margin-top: 6px; }
+    section { padding: 72px 5%; }
+    .section-eyebrow { display: inline-block; background: var(--accent3); color: var(--primary); font-size: 0.75rem; font-weight: 700; padding: 3px 14px; border-radius: 20px; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .section-title { font-size: clamp(1.4rem, 3vw, 2rem); margin-bottom: 10px; }
+    .section-sub { color: var(--text-body); opacity: 0.7; font-size: 0.95rem; max-width: 560px; margin-bottom: 44px; }
+    .divider { width: 56px; height: 4px; background: var(--accent2); border-radius: 2px; margin: 12px 0 28px; }
+    #park { background: #FFFFFF; }
+    .park-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-bottom: 40px; }
+    .park-card { background: #f8faf8; border: 1px solid var(--accent3); border-radius: 12px; padding: 24px; }
+    .park-card h3 { font-size: 1rem; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+    .park-card h3 .icon { width: 32px; height: 32px; background: var(--accent3); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
+    .park-card p, .park-card li { font-size: 0.9rem; color: var(--text-body); line-height: 1.75; }
+    .park-card ul { padding-left: 18px; }
+    .park-card li { margin-bottom: 4px; }
+    .park-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 8px; }
+    .park-feature { background: var(--primary); color: var(--white); border-radius: 10px; padding: 20px; display: flex; align-items: flex-start; gap: 12px; }
+    .park-feature .feat-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .park-feature p { font-size: 0.875rem; line-height: 1.6; color: rgba(255,255,255,0.9); }
+    .highlight-num { color: var(--accent2); font-weight: 800; }
+    #properties { background: #f6f9f7; }
+    .properties-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .prop-card { background: var(--white); border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(28,87,57,0.09); transition: transform 0.25s, box-shadow 0.25s; border: 1px solid #e8f0eb; }
+    .prop-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(28,87,57,0.14); }
+    .prop-img { background: var(--accent3); height: 180px; display: flex; align-items: center; justify-content: center; color: var(--primary); font-size: 2.5rem; position: relative; }
+    .prop-badge { position: absolute; top: 14px; left: 14px; background: var(--accent2); color: var(--primary); font-size: 0.72rem; font-weight: 800; padding: 3px 12px; border-radius: 20px; }
+    .prop-type-badge { position: absolute; top: 14px; right: 14px; background: var(--primary); color: var(--white); font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+    .prop-body { padding: 20px; }
+    .prop-body h3 { font-size: 1rem; margin-bottom: 6px; }
+    .prop-location { font-size: 0.82rem; color: var(--accent1); font-weight: 600; margin-bottom: 14px; display: flex; align-items: center; gap: 5px; }
+    .prop-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 16px; }
+    .prop-spec { background: #f4f8f5; border-radius: 8px; padding: 8px 10px; }
+    .prop-spec .spec-label { font-size: 0.7rem; color: #666; display: block; }
+    .prop-spec .spec-val { font-size: 0.88rem; font-weight: 700; color: var(--primary); }
+    .prop-price { font-size: 1.3rem; font-weight: 800; color: var(--accent2); margin-bottom: 6px; }
+    .prop-price span { font-size: 0.78rem; font-weight: 500; color: #888; margin-left: 4px; }
+    .prop-features { font-size: 0.82rem; color: var(--text-body); opacity: 0.75; margin-bottom: 18px; line-height: 1.6; }
+    .btn-inquiry { display: block; text-align: center; background: var(--accent2); color: var(--primary); font-weight: 800; font-size: 0.9rem; padding: 11px; border-radius: 8px; text-decoration: none; transition: background 0.2s; }
+    .btn-inquiry:hover { background: #d4a300; }
+    .prop-placeholder { background: var(--white); border: 2px dashed var(--accent3); border-radius: 14px; padding: 48px 24px; text-align: center; }
+    .prop-placeholder .ph-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .prop-placeholder p { font-size: 0.9rem; color: #9ab09a; }
+    #company { background: var(--white); }
+    .company-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .company-kpis { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+    .kpi { background: var(--accent3); border-radius: 12px; padding: 20px; text-align: center; }
+    .kpi .kpi-num { display: block; font-size: 1.6rem; font-weight: 800; color: var(--primary); line-height: 1; }
+    .kpi .kpi-label { font-size: 0.78rem; color: var(--primary); margin-top: 6px; opacity: 0.85; }
+    .company-desc { font-size: 0.95rem; color: var(--text-body); margin-bottom: 24px; line-height: 1.85; }
+    .service-areas { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .area-tag { background: #edf5f0; color: var(--primary); font-size: 0.82rem; font-weight: 600; padding: 5px 14px; border-radius: 20px; border: 1px solid var(--accent3); }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--primary); color: var(--white); font-weight: 700; font-size: 0.95rem; padding: 13px 28px; border-radius: 8px; text-decoration: none; transition: background 0.2s; }
+    .btn-primary:hover { background: var(--accent1); }
+    .company-visual { background: linear-gradient(160deg, var(--primary) 0%, #2e7a55 100%); border-radius: 16px; padding: 40px 36px; color: var(--white); }
+    .company-visual h3 { color: var(--accent2); font-size: 1.3rem; margin-bottom: 24px; }
+    .service-list { list-style: none; }
+    .service-list li { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.12); font-size: 0.9rem; color: rgba(255,255,255,0.9); }
+    .service-list li:last-child { border-bottom: none; }
+    .service-list .check { width: 22px; height: 22px; background: var(--accent2); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--primary); font-size: 0.7rem; font-weight: 800; margin-top: 1px; }
+    .positioning { margin-top: 28px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 10px; font-size: 0.82rem; color: rgba(255,255,255,0.8); font-style: italic; line-height: 1.7; border-left: 3px solid var(--accent2); }
+    #team { background: #f6f9f7; }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 24px; }
+    .team-card { background: var(--white); border-radius: 14px; overflow: hidden; text-align: center; border: 1px solid #e8f0eb; transition: transform 0.25s, box-shadow 0.25s; box-shadow: 0 2px 8px rgba(28,87,57,0.06); }
+    .team-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(28,87,57,0.12); }
+    .team-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: top; display: block; background: var(--accent3); }
+    .team-body { padding: 16px 14px 18px; }
+    .team-name { font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+    .team-title { font-size: 0.78rem; color: var(--accent1); font-weight: 600; margin-bottom: 10px; background: #edf5f0; display: inline-block; padding: 2px 10px; border-radius: 20px; }
+    .team-phone { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.85rem; color: var(--text-body); font-weight: 600; margin-bottom: 10px; }
+    .team-phone a { color: var(--primary); text-decoration: none; }
+    .team-specialty { font-size: 0.75rem; color: #888; line-height: 1.5; margin-bottom: 12px; }
+    .team-qr-wrap { display: flex; flex-direction: column; align-items: center; gap: 4px; padding-top: 10px; border-top: 1px solid #eee; }
+    .team-qr-wrap img { width: 80px; height: 80px; border-radius: 6px; }
+    .team-qr-label { font-size: 0.68rem; color: #06C755; font-weight: 700; letter-spacing: 0.05em; }
+    #contact { background: var(--primary); color: var(--white); text-align: center; }
+    #contact .section-eyebrow { background: rgba(255,255,255,0.15); color: var(--white); }
+    #contact .section-title { color: var(--white); }
+    #contact .section-sub { color: rgba(255,255,255,0.75); max-width: 480px; margin: 0 auto 44px; }
+    .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto 40px; }
+    .contact-item { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.18); border-radius: 12px; padding: 22px; }
+    .contact-item .ci-icon { font-size: 1.5rem; margin-bottom: 10px; }
+    .contact-item .ci-label { font-size: 0.75rem; color: rgba(255,255,255,0.65); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.08em; }
+    .contact-item .ci-val { font-size: 1rem; font-weight: 700; color: var(--white); }
+    .contact-item .ci-val a { color: var(--white); text-decoration: none; }
+    .contact-item .ci-val a:hover { color: var(--accent2); }
+    .contact-cta { display: inline-flex; align-items: center; gap: 10px; background: var(--accent2); color: var(--primary); font-weight: 800; font-size: 1rem; padding: 14px 36px; border-radius: 50px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 16px rgba(234,181,0,0.4); }
+    .contact-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(234,181,0,0.5); }
+    footer { background: #0f3324; color: rgba(255,255,255,0.55); text-align: center; padding: 24px 5%; font-size: 0.82rem; }
+    footer a { color: var(--accent3); text-decoration: none; }
+    footer a:hover { color: var(--accent2); }
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+      .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--primary); flex-direction: column; padding: 20px 5%; gap: 16px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+      .nav-links.open { display: flex; }
+      nav { position: relative; }
+      .park-grid, .company-layout { grid-template-columns: 1fr; }
+      .company-kpis { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="top">
+  <a href="#top" class="nav-brand">全興產業園區廠房廠地 <span class="tag">瑞禾不動產</span></a>
+  <button class="hamburger" id="hamburger" aria-label="選單"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#park">工業區簡介</a></li>
+    <li><a href="#properties">精選物件</a></li>
+    <li><a href="#company">關於我們</a></li>
+    <li><a href="#team">負責窗口</a></li>
+    <li><a href="#contact">聯絡我們</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <div class="hero-eyebrow">彰化工業地產・廠房廠地專業媒合</div>
+  <h1>全興產業園區<br>廠房・廠地 買賣租賃</h1>
+  <p>深耕中臺灣工業地產，由專業團隊協助您在全興產業園區找到最適合的廠房或產業用地</p>
+  <a href="#contact" class="hero-cta">▶ 立即詢問物件</a>
+  <div class="hero-stats">
+    <div class="hero-stat"><span class="number">246.8</span><span class="label">公頃・總開發面積</span></div>
+    <div class="hero-stat"><span class="number">130+</span><span class="label">家廠商進駐</span></div>
+    <div class="hero-stat"><span class="number">8</span><span class="label">年連續承接經濟部專案</span></div>
+    <div class="hero-stat"><span class="number">12</span><span class="label">位專業服務團隊</span></div>
+  </div>
+</header>
+
+<section id="park">
+  <div>
+    <span class="section-eyebrow">INDUSTRIAL PARK</span>
+    <h2 class="section-title">全興產業園區簡介</h2>
+    <div class="divider"></div>
+    <p class="section-sub">鄰近台中港的綜合性產業園區，提供多元產業用地選擇，適合金屬製品、紡織及基本金屬等製造業進駐</p>
+  </div>
+  <div class="park-grid">
+    <div class="park-card">
+      <h3><span class="icon">📍</span>基本資料</h3>
+      <ul>
+        <li><strong>全名：</strong>全興產業園區（原名全興工業區）</li>
+        <li><strong>位置：</strong>彰化縣和美鎮及伸港鄉境內</li>
+        <li><strong>總面積：</strong><span class="highlight-num">246.8 公頃</span></li>
+        <li><strong>設廠用地：</strong>126.5 公頃</li>
+        <li><strong>開發起始：</strong>民國 76 年（1987 年）</li>
+        <li><strong>土地分區：</strong>工業區—丁種建築用地</li>
+        <li><strong>管理單位：</strong>經濟部產業園區管理局臺中分局</li>
+      </ul>
+    </div>
+    <div class="park-card">
+      <h3><span class="icon">🗺️</span>土地面積配置</h3>
+      <ul>
+        <li><strong>設廠用地：</strong>126.5 公頃</li>
+        <li><strong>社區用地：</strong>21.8 公頃</li>
+        <li><strong>公共設施：</strong>34.3 公頃</li>
+        <li><strong>防風林帶：</strong>64.2 公頃</li>
+      </ul>
+      <br>
+      <p>園區呈南北狹長形，南端設有多處公園綠地供廠商員工休憩。</p>
+      <br>
+      <p><strong>現有廠商：</strong><span class="highlight-num">約 130 家</span></p>
+    </div>
+    <div class="park-card">
+      <h3><span class="icon">🚛</span>交通區位</h3>
+      <p>位於彰化縣西北端，鄰近烏溪西南岸，對外交通以<strong>台17線省道</strong>及<strong>西濱快速道路（台61線）</strong>為主。</p>
+      <br>
+      <ul>
+        <li><strong>台中港：</strong>約 5 公里（海運物流便捷）</li>
+        <li><strong>台中市：</strong>東距約 17 公里</li>
+        <li><strong>彰化市：</strong>約 8 公里</li>
+        <li><strong>高速公路：</strong>距交流道約 8 公里</li>
+      </ul>
+    </div>
+    <div class="park-card">
+      <h3><span class="icon">🔩</span>主要產業類型</h3>
+      <ul>
+        <li>金屬製品製造業（最大宗）</li>
+        <li>紡織業</li>
+        <li>基本金屬製造業</li>
+        <li>機械設備製造業</li>
+        <li>橡塑膠製品・化學原料</li>
+      </ul>
+    </div>
+  </div>
+  <div class="park-features">
+    <div class="park-feature"><span class="feat-icon">⚓</span><p><strong>鄰港地利優勢</strong><br>距台中港僅 5 公里，進出口物流高效，大幅降低運輸成本</p></div>
+    <div class="park-feature"><span class="feat-icon">🏗️</span><p><strong>完善公共設施</strong><br>完整道路、電力、電信及污水系統，支援各類型製造業進駐</p></div>
+    <div class="park-feature"><span class="feat-icon">🔗</span><p><strong>成熟產業聚落</strong><br>民國 76 年開發，上下游廠商聚集，供應鏈效益顯著</p></div>
+    <div class="park-feature"><span class="feat-icon">🌱</span><p><strong>宜人工作環境</strong><br>防風林帶 64.2 公頃，附設公園綠地，提升員工生活品質</p></div>
+  </div>
+</section>
+
+<section id="properties">
+  <div>
+    <span class="section-eyebrow">FEATURED LISTINGS</span>
+    <h2 class="section-title">精選物件</h2>
+    <div class="divider"></div>
+    <p class="section-sub">全興產業園區廠房・廠地優質物件，由專業團隊嚴選推薦</p>
+  </div>
+  <div class="properties-grid">
+    <div class="prop-placeholder"><div class="ph-icon">🏗️</div><p>更多物件即將上架<br>歡迎致電詢問未公開物件</p></div>
+    <div class="prop-placeholder"><div class="ph-icon">📋</div><p>客製化廠房/廠地需求<br>請直接聯絡我們的業務團隊</p></div>
+  </div>
+</section>
+
+<section id="company">
+  <div>
+    <span class="section-eyebrow">ABOUT US</span>
+    <h2 class="section-title">關於瑞禾不動產</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="company-layout">
+    <div>
+      <div class="company-kpis">
+        <div class="kpi"><span class="kpi-num">8</span><span class="kpi-label">連續年承接<br>經濟部專案</span></div>
+        <div class="kpi"><span class="kpi-num">16,869㎡</span><span class="kpi-label">累計活化<br>土地面積</span></div>
+        <div class="kpi"><span class="kpi-num">12</span><span class="kpi-label">位專業<br>服務團隊</span></div>
+        <div class="kpi"><span class="kpi-num">4</span><span class="kpi-label">大服務<br>行政區</span></div>
+      </div>
+      <p class="company-desc"><strong>瑞禾不動產經紀股份有限公司（RUIHE Real Estate）</strong>，以「專業・誠信・務實」為核心，深耕中臺灣工業地產，是您產業用地整合的可靠夥伴。</p>
+      <p class="company-desc">我們的服務涵蓋苗栗、臺中、彰化、南投四大行政區，在現行法令框架下，以團隊專業執行力協助客戶排除行政門檻，迅速掌握投資契機。</p>
+      <div class="service-areas">
+        <span class="area-tag">苗栗縣</span><span class="area-tag">臺中市</span><span class="area-tag">彰化縣</span><span class="area-tag">南投縣</span>
+      </div>
+      <a href="https://industrialrepro.github.io/website/#about" target="_blank" rel="noopener" class="btn-primary">瞭解更多 →</a>
+    </div>
+    <div class="company-visual">
+      <h3>我們的服務範疇</h3>
+      <ul class="service-list">
+        <li><span class="check">✓</span><span>廠房・產業用地 買賣媒合</span></li>
+        <li><span class="check">✓</span><span>廠房・廠地 租賃仲介</span></li>
+        <li><span class="check">✓</span><span>企業設廠選址評估</span></li>
+        <li><span class="check">✓</span><span>工業用地法規諮詢</span></li>
+        <li><span class="check">✓</span><span>市地重劃開發媒合</span></li>
+        <li><span class="check">✓</span><span>土地使用分區變更協助</span></li>
+        <li><span class="check">✓</span><span>區段徵收與整合開發規劃</span></li>
+      </ul>
+      <div class="positioning">「在現行法令框架下，以團隊專業執行力協助客戶排除行政門檻，迅速掌握投資契機。」</div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div>
+    <span class="section-eyebrow">OUR TEAM</span>
+    <h2 class="section-title">負責窗口</h2>
+    <div class="divider"></div>
+    <p class="section-sub">12位專業團隊提供全方位工業不動產服務，直接與業務經理聯絡</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <img class="team-photo" src="https://industrialrepro.github.io/changbin-park/images/persons/luo-changgeng.jpg" alt="羅長庚">
+      <div class="team-body">
+        <div class="team-name">羅長庚</div><div class="team-title">業務經理</div>
+        <div class="team-phone">📱 <a href="tel:0913696901">0913-696901</a></div>
+        <div class="team-specialty">市地重劃開發媒合</div>
+        <div class="team-qr-wrap"><img src="https://industrialrepro.github.io/changbin-park/images/qrcodes/qr-luo-changgeng.jpg" alt="LINE QR"><span class="team-qr-label">LINE 加好友</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-photo" src="https://industrialrepro.github.io/changbin-park/images/persons/wang-tingjia.jpg" alt="王廷家">
+      <div class="team-body">
+        <div class="team-name">王廷家</div><div class="team-title">業務經理</div>
+        <div class="team-phone">📱 <a href="tel:0906566158">0906-566158</a></div>
+        <div class="team-specialty">土地開發整合・市地重劃・區段徵收規劃</div>
+        <div class="team-qr-wrap"><img src="https://industrialrepro.github.io/changbin-park/images/qrcodes/qr-wang-tingjia.jpg" alt="LINE QR"><span class="team-qr-label">LINE 加好友</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-photo" src="https://industrialrepro.github.io/changbin-park/images/persons/chen-renyi.jpg" alt="陳仁奕">
+      <div class="team-body">
+        <div class="team-name">陳仁奕</div><div class="team-title">業務經理</div>
+        <div class="team-phone">📱 <a href="tel:0986829319">0986-829319</a></div>
+        <div class="team-specialty">工業用地媒合・設廠選址・法規諮詢</div>
+        <div class="team-qr-wrap"><img src="https://industrialrepro.github.io/changbin-park/images/qrcodes/qr-chen-renyi.jpg" alt="LINE QR"><span class="team-qr-label">LINE 加好友</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-photo" src="https://industrialrepro.github.io/changbin-park/images/persons/ou-suifeng.jpg" alt="歐穗鳳">
+      <div class="team-body">
+        <div class="team-name">歐穗鳳</div><div class="team-title">業務經理</div>
+        <div class="team-phone">📱 <a href="tel:0972082517">0972-082517</a></div>
+        <div class="team-specialty">不動產買賣與租賃</div>
+        <div class="team-qr-wrap"><img src="https://industrialrepro.github.io/changbin-park/images/qrcodes/qr-ou-suifeng.jpg" alt="LINE QR"><span class="team-qr-label">LINE 加好友</span></div>
+      </div>
+    </div>
+    <div class="team-card">
+      <img class="team-photo" src="https://industrialrepro.github.io/changbin-park/images/persons/li-wucan.jpg" alt="李武燦">
+      <div class="team-body">
+        <div class="team-name">李武燦</div><div class="team-title">業務經理</div>
+        <div class="team-phone">📱 <a href="tel:0936497985">0936-497985</a></div>
+        <div class="team-specialty">不動產買賣與租賃</div>
+        <div class="team-qr-wrap"><img src="https://industrialrepro.github.io/changbin-park/images/qrcodes/qr-li-wucan.jpg" alt="LINE QR"><span class="team-qr-label">LINE 加好友</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <span class="section-eyebrow">CONTACT US</span>
+  <h2 class="section-title">聯絡我們</h2>
+  <p class="section-sub">有廠房廠地買賣、租賃或諮詢需求，歡迎直接聯絡我們</p>
+  <div class="contact-grid">
+    <div class="contact-item"><div class="ci-icon">📞</div><div class="ci-label">公司電話</div><div class="ci-val"><a href="tel:0423803560">04-2380-3560</a></div></div>
+    <div class="contact-item"><div class="ci-icon">📠</div><div class="ci-label">傳真</div><div class="ci-val">04-2380-3160</div></div>
+    <div class="contact-item"><div class="ci-icon">📍</div><div class="ci-label">公司地址</div><div class="ci-val" style="font-size:0.88rem">臺中市南屯區<br>益豐路四段91號</div></div>
+    <div class="contact-item"><div class="ci-icon">👨‍💼</div><div class="ci-label">主要聯絡人</div><div class="ci-val" style="font-size:0.92rem">張現傑<br><span style="font-size:0.78rem;font-weight:500;opacity:0.85">工業地產部業務總監</span><br><a href="tel:0953909777" style="font-size:0.9rem">0953-909777</a></div></div>
+    <div class="contact-item"><div class="ci-icon">✉️</div><div class="ci-label">電子郵件</div><div class="ci-val"><a href="mailto:ruei.he23803560@gmail.com">ruei.he23803560@gmail.com</a></div></div>
+    <div class="contact-item" style="display:flex;flex-direction:column;align-items:center;">
+      <div class="ci-label" style="margin-bottom:10px;">公司 LINE 官方帳號</div>
+      <img src="https://industrialrepro.github.io/changbin-park/images/qrcodes/qr-company-line.jpg" alt="公司LINE QR" style="width:110px;height:110px;border-radius:8px;background:#fff;">
+    </div>
+  </div>
+  <a href="tel:0423803560" class="contact-cta">📞 立即致電詢問</a>
+</section>
+
+<footer>
+  <p>© 2025 瑞禾不動產經紀股份有限公司（RUIHE Real Estate）・全興產業園區廠房廠地專業服務<br>
+  臺中市南屯區益豐路四段91號 ｜ Tel: 04-2380-3560 ｜ <a href="https://industrialrepro.github.io/website/#about" target="_blank" rel="noopener">公司官網</a></p>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(l => l.addEventListener('click', () => navLinks.classList.remove('open')));
+</script>
+</body>
+</html>
